@@ -21,10 +21,10 @@ Third, install the requirements.
 $ pip install -r requirements.txt
 ```
 
-Then, with the configuration file in place, you can now simply run webpack like this (in root directory: webpack.config.js):
+Then, with the root file in place, you can now simply run webpack like this (in root directory: webpack.config.js):
 
 ```bash
-$ webpack
+$ ./node_modules/.bin/webpack --config webpack.config.js
 ```
 
 Latest, just run your server with prefered port.
