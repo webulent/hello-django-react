@@ -1,9 +1,17 @@
+{% load render_bundle from webpack_loader %}
 <html>
 <head>
     <meta charset="UTF-8">
     <title>Our Title</title>
+
+    {% load static %}
+
 </head>
 <body>
+
+    <div id="react-app"></div>
+    {% render_bundle 'main' %}
+
     <h2>We are counting...</h2>
     <ul>
         {% for num in arr_list %}
