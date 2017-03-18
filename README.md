@@ -35,3 +35,34 @@ $ ./manage.py runserver 8000
 ```
 
 Now you should see a new browser window/tab opening and a content of "Hello World" in http://127.0.0.1:8080.
+
+
+
+## virtualenv
+
+Install virtualenv via pip:
+```bash
+$ pip install virtualenv
+```
+
+Basic Usage
+Create a virtual environment:
+```bash
+$ cd my_project_folder
+$ virtualenv my_project
+```
+
+To begin using the virtual environment, it needs to be activated:
+```bash
+$ source my_project/bin/activate
+```
+
+Install packages as usual, for example:
+```bash
+$ pip install requests
+```
+
+If you are done working in the virtual environment for the moment, you can deactivate it:
+```bash
+$ deactivate
+```
