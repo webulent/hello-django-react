@@ -27,7 +27,7 @@ SECRET_KEY = 'egyry%459&tnv4-$2(k(68f($np+#$d-5smlf_2i*bssxtr9x+'
 DEBUG = True
 
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+# SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Allow all host headers
 ALLOWED_HOSTS = ['*']
@@ -125,9 +125,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/assets/'
-
-PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
-STATIC_ROOT = os.path.join(PROJECT_DIR, 'assets')
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'assets'),

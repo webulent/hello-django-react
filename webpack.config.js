@@ -16,11 +16,6 @@ module.exports = {
     new BundleTracker({filename: './webpack-stats.json'}),
   ],
 
-    devServer: {
-        inline: true,
-        port:3333
-    },
-
   module: {
     loaders: [
       {
@@ -28,7 +23,7 @@ module.exports = {
           exclude: /node_modules/,
           loader: 'babel-loader',
           query: {
-                presets: ['es2015', 'react']
+                presets: ['react']
             }
       }, // to transform JSX into JS
     ],
