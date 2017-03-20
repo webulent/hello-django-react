@@ -13,7 +13,7 @@ module.exports = {
   },
 
   plugins: [
-    new BundleTracker({filename: './webpack-stats.json'}),
+    new BundleTracker({filename: './assets/webpack-stats.json'}),
   ],
 
     devServer: {
