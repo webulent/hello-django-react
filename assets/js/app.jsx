@@ -2,9 +2,9 @@ var React = require('react')
 
 
 const element = <div>
-      <Welcome name="Bülent" />
-      <Welcome name="Kayla" />
-      <Welcome name="Barbara" />
+      <Welcome name="Bülent," />
+      <Welcome name="Kayla," />
+      <Welcome name="Barbara." />
     </div>;
 
 
